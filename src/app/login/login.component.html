@@ -1,0 +1,15 @@
+<h1>Ingrese su usuario</h1>
+
+<p>{{usuario}}</p>
+<p>{{clave}}</p>
+
+<div id="usuarioInput">
+    <label for="user">Usuario:</label>
+    <input id="user" type="text" [(ngModel)]="usuario">
+</div>
+<div id="claveInput">
+    <label for="clave">Clave:</label>
+    <input id="clave" type="password" [(ngModel)]="clave">
+</div>
+
+<button (click)="loguear()">Login</button>
